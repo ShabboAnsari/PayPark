@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pay-n-park-web-ui": {
+    "user-crud-demo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/pay-n-park-web-ui",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,9 +24,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
+			  "node_modules/font-awesome/css/font-awesome.css",
+              "src/styles/app.scss"
+
+			  ],
+            "scripts": ["node_modules/chart.js/dist/Chart.js"]
           },
           "configurations": {
             "production": {
@@ -58,18 +60,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "pay-n-park-web-ui:build"
+            "browserTarget": "user-crud-demo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "pay-n-park-web-ui:build:production"
+              "browserTarget": "user-crud-demo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "pay-n-park-web-ui:build"
+            "browserTarget": "user-crud-demo:build"
           }
         },
         "test": {
@@ -84,9 +86,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/font-awesome/css/font-awesome.css",
+              "src/styles/app.scss"
             ],
-            "scripts": []
+            "scripts": [
+			"node_modules/chart.js/dist/Chart.js"
+			]
           }
         },
         "lint": {
@@ -106,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "pay-n-park-web-ui:serve"
+            "devServerTarget": "user-crud-demo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "pay-n-park-web-ui:serve:production"
+              "devServerTarget": "user-crud-demo:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "pay-n-park-web-ui"
+  "defaultProject": "user-crud-demo"
 }
