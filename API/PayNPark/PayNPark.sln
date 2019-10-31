@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayNPark.Models", "PayNPark.Models\PayNPark.Models.csproj", "{94E45D67-AC0D-40DB-BB27-1F2E9688F8F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayNPark.Repository", "PayNPark.Repository\PayNPark.Repository.csproj", "{4840E0F6-2A75-464A-B5FC-B39BBBB6F294}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayNPark.BusinessLogic", "PayNPark.BusinessLogic\PayNPark.BusinessLogic.csproj", "{3407CEE9-6CB8-4E2D-99FE-A66A59857E41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayNPark.API", "PayNPark.API\PayNPark.API.csproj", "{062F800F-3788-4F31-BD5E-00ED66B7E979}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94E45D67-AC0D-40DB-BB27-1F2E9688F8F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E45D67-AC0D-40DB-BB27-1F2E9688F8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E45D67-AC0D-40DB-BB27-1F2E9688F8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E45D67-AC0D-40DB-BB27-1F2E9688F8F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4840E0F6-2A75-464A-B5FC-B39BBBB6F294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4840E0F6-2A75-464A-B5FC-B39BBBB6F294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4840E0F6-2A75-464A-B5FC-B39BBBB6F294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4840E0F6-2A75-464A-B5FC-B39BBBB6F294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3407CEE9-6CB8-4E2D-99FE-A66A59857E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3407CEE9-6CB8-4E2D-99FE-A66A59857E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3407CEE9-6CB8-4E2D-99FE-A66A59857E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3407CEE9-6CB8-4E2D-99FE-A66A59857E41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{062F800F-3788-4F31-BD5E-00ED66B7E979}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{062F800F-3788-4F31-BD5E-00ED66B7E979}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{062F800F-3788-4F31-BD5E-00ED66B7E979}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{062F800F-3788-4F31-BD5E-00ED66B7E979}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
