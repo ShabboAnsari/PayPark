@@ -244,6 +244,16 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PayNPark.BusinessLogic\PayNPark.BusinessLogic.csproj">
+      <Project>{3407cee9-6cb8-4e2d-99fe-a66a59857e41}</Project>
+      <Name>PayNPark.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PayNPark.Models\PayNPark.Models.csproj">
+      <Project>{94e45d67-ac0d-40db-bb27-1f2e9688f8f6}</Project>
+      <Name>PayNPark.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
